@@ -72,3 +72,7 @@ kramdown:
   
 # Theme
 theme: minima
+
+# Navigation
+header_pages:
+- /about/contact.md
