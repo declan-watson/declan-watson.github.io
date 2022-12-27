@@ -71,4 +71,4 @@ kramdown:
   show_warnings     : false
   
 # Theme
-theme: hacker
+theme: minima
