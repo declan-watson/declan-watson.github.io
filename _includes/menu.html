@@ -4,9 +4,9 @@
   {%- assign url = item.url | default: node.url -%}
   {%- assign title = item.title | default: node.title -%}
   {%- if item.title == "Mastodon" -%}
-  <a rel="me" href="https://infosec.exchange/@declan">{%- if item.icon -%}<svg aria-label="{{ title }}" class="icon"><use xlink:href="{{ "/assets/fontawesome/icons.svg" | relative_url }}#{{ item.icon }}"></use></svg>{%- else -%}{{ title }}{%- endif -%}</a>
+  <a rel="me" href="https://infosec.exchange/@declan" target="_blank">{%- if item.icon -%}<svg aria-label="{{ title }}" class="icon"><use xlink:href="{{ "/assets/fontawesome/icons.svg" | relative_url }}#{{ item.icon }}"></use></svg>{%- else -%}{{ title }}{%- endif -%}</a>
   {%- else -%}
-  <a href="{{ url | relative_url }}" {% if url == page.url %}class="selected"{% endif %}>
+  <a href="{{ url | relative_url }}" {% if url == page.url %}class="selected"{% endif %} target="_blank">
     {%- if item.icon -%}<svg aria-label="{{ title }}" class="icon"><use xlink:href="{{ "/assets/fontawesome/icons.svg" | relative_url }}#{{ item.icon }}"></use></svg>{%- else -%}{{ title }}{%- endif -%}
   {%- endif -%}
   </a>
