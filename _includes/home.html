@@ -1,7 +1,6 @@
 {%- assign posts = paginator.posts | default: site.posts -%}
 {% for post in posts %}
-  <article>    
-    <a rel="me" href="https://infosec.exchange/@declan">Mastodon</a>
+  <article>
     {% include meta.html post=post preview=true %}
     {{ post.excerpt }}
     <div class="more"><a href="{{ post.url | relative_url }}">read more</a></div>
