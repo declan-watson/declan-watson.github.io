@@ -12,6 +12,5 @@
     {% if paginator.previous_page %}<a href="{{ paginator.previous_page_path | relative_url }}">« newer posts</a>{% else %}<span></span>{% endif %}
     <span>page {{ paginator.page }} of {{ paginator.total_pages }}</span>
     {% if paginator.next_page %}<a href="{{ paginator.next_page_path | relative_url }}">older posts »</a>{% else %}<span></span>{% endif %}
-    <a rel="me" href="https://infosec.exchange/@declan">Mastodon</a>
   </footer>
 {% endif %}
