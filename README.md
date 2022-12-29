@@ -4,8 +4,6 @@ permalink: "/about/"
 layout: page
 ---
 
-## About Me
-
 Husband, nerd and spreadsheet jockey from Sydney/Gadigal land.
 
 Currently doing financial analysis but also interested in learning about technology and cybersecurity. I enjoy tinking with technology which is why I'm using Linux on my main computer (not that a beginner couldn't also use it) and using <a href="https://grapheneos.org/features">GrapheneOS</a> on my phone. I'm also particularly interested in digital privacy, I believe that not wanting to continuously share information with a company doesn't make you weird, just like closing your blinds so the creep across the street with binoculars can't see you doesn't make you weird. At the minumum you should be able to chose what information you provide and for what purpose.
