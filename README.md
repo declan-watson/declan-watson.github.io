@@ -17,6 +17,6 @@ In my free time I enjoy:
 - Magic the Gathering
 - D&D
 
-The best way to contact me would be at the moment would be on here or <a href="https://infosec.exchange/@declan">Mastodon</a>.
+The best way to contact me would be at the moment would be on here (on my <a href="https://github.com/declan-watson">Github</a>) or <a href="https://infosec.exchange/@declan">Mastodon</a>.
 
 My views do not necessarily reflect the views of my employer, although I'm not planning on writing anything outlandish!
