@@ -67,6 +67,7 @@ This is a completely valid question and is exactly why it's the _lesser_ evil. T
 This blog isn't meant to be overly technical so this description will be kept at a summarised level, but one of the key security concepts of password managers is the iteration of keys based on your password so it goes through the hash multiple times. This is usually done in the form of [Password Based Key Derivation Function 2 (or PBKDF2)](https://cryptobook.nakov.com/mac-and-key-derivation/pbkdf2)[^5].
 
 In simple terms, the hash function is applied to your original password with a 'salt' (a set string of characters to help obscure it). Then the salt is added again, then hashed again. This hash is applied over and over again with the salt added each time. The amount of times the output goes through this function adds to the complexity of trying to crack it. If the iteration count is set to 2, it will look something like this:
+
 | **Stage**                  | **Result**                              |
 |----------------------------|-----------------------------------------|
 | Original Password          | password123                             |
