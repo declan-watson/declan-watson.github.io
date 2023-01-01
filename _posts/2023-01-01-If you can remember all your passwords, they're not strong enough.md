@@ -68,6 +68,8 @@ This blog isn't meant to be overly technical so this description will be kept at
 
 In simple terms, the hash function is applied to your original password with a 'salt' (a set string of characters to help obscure it). Then the salt is added again, then hashed again. This hash is applied over and over again with the salt added each time. The amount of times the output goes through this function adds to the complexity of trying to crack it. If the iteration count is set to 2, it will look something like this:
 
+---
+
 | **Stage**                  | **Result**                              |
 |----------------------------|-----------------------------------------|
 | Original Password          | password123                             |
