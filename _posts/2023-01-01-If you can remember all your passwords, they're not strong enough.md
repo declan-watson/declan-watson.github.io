@@ -52,7 +52,7 @@ You can definitely see a common theme among the passwords people tend to use. Ty
 
 ## What kind of password?
 
-As you can see, any passwords on the shorter side are almost useless when it comes to protection; this means you need a long password. What about upper case, lower case, numbers, symbols? The research suggests that adding to the length, rather than adding complexity, is better for security. This is also the view of the [National Institute of Standards and Technology (NIST)](https://auth0.com/blog/dont-pass-on-the-new-nist-password-guidelines/) who set password guidelines for the U.S. governemnt. For example, adding a symbol to a 9 character password takes the estimated cracking time from 3 days to 3 weeks, but adding an extra character (while keeping the complexity the same) shoots this up to 7 months.
+As you can see, any passwords on the shorter side are almost useless when it comes to protection; this means you need a long password. What about upper case, lower case, numbers, symbols? The research suggests that adding to the length, rather than adding complexity, is better for security. This is also the view of the [National Institute of Standards and Technology (NIST)](https://auth0.com/blog/dont-pass-on-the-new-nist-password-guidelines/) who set password guidelines for the U.S. government. For example, adding a symbol to a 9 character password takes the estimated cracking time from 3 days to 3 weeks, but adding an extra character (while keeping the complexity the same) shoots this up to 7 months.
 
 There are a few methods of generating passwords that fit this requirement but the main one is [combining a group of dictionary words](https://xkcd.com/936/). You can do this with word generators like [Diceware](https://diceware.dmuth.org/) that make a passphrase instead of a password; the difference being the length and amount of words. An example of a passphrase is `correct-horse-battery-staple`, the length of the password is much longer than one word that has had random adjustments like capitals and symbols applied to it, making it much harder to crack.
 
@@ -62,7 +62,7 @@ The short answer is yes. The average person [has around 100 different password p
 
 ## What if the password manager is compromised?
 
-This is a completely valid question and is exactly why it's the _lesser_ evil. This is also known as a key barrier to entry as to why people don't use password managers in general.[^4] As it turns out, [65% of Americans don't trust password managers](https://www.passwordmanager.com/password-manager-trust-survey/). A single point of failure is bad, there's no other way to put it, but it's better than the alternative because of the additional security steps that good password managers implement.
+This is a completely valid question and is exactly why it's the _lesser_ evil. This is also known as a key barrier to entry as to why people don't use password managers in general.[^4] As it turns out, [65% of Americans don't trust password managers](https://www.passwordmanager.com/password-manager-trust-survey/). A single point of failure is bad, there's no other way to put it, but it's better than the alternative because of the additional security steps that good password managers implement, especially in the context of the dramatic downsides of reusing passwords.
 
 This blog isn't meant to be overly technical so this description will be kept at a summarised level, but one of the key security concepts of password managers is the iteration of keys based on your password so it goes through the hash multiple times. This is usually done in the form of [Password Based Key Derivation Function 2 (or PBKDF2)](https://cryptobook.nakov.com/mac-and-key-derivation/pbkdf2)[^5].
 
@@ -90,9 +90,9 @@ The recent [events over at LastPass](https://blog.lastpass.com/2022/12/notice-of
 
 Where did LastPass go wrong specifically?
 - Not all of the information was encrpyted
-  - This means that information such as website was left in the clear so an attacker would have more information than they should when trying to break in
+  - This means that information such as website was left in the clear so an attacker would have more information than they should when trying to break in to either the vault or the accounts associated with the vault
 - The number of PBKDF2 iterations is defaulted to 100,100
-  - **this is also the case for Bitwarden, make sure you change this if you use or start using Bitwarden**
+  - **This is also the case for Bitwarden, make sure you change this if you use or start using Bitwarden**
   - This is well below the recommended number of iterations suggested (310,000)
   - Again, having this set much higher only has a negligible impact on the end user but makes it a lot harder to breach for an attacker
 - This default is relatively new, prior to this it was much lower (some as low as 5 or even 1 depending on how far back you go) and the keys have not been regenerated to keep up with the new iteration default
