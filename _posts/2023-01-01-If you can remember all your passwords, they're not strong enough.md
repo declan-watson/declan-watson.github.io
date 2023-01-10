@@ -98,7 +98,7 @@ Where did LastPass go wrong specifically?
 - This default is relatively new, prior to this it was much lower (some as low as 5 or even 1 depending on how far back you go) and the keys have not been regenerated to keep up with the new iteration default
   - The failure to update the iterations was one of the major security oversights by LastPass, as well as allowing such low counts to begin with
 - Questionable timing in notifying users of the breach
-- It has previously allowed 8 character passwords with no notification after being set that this is now out of date (from a security perspecitve) and should be updated
+- It has previously allowed 8 character passwords with no notification after being set that this is now out of date (from a security perspective) and should be updated
 - [Here is a full blog post](https://palant.info/2022/12/26/whats-in-a-pr-statement-lastpass-breach-explained/) tearing apart, for lack of a better word, the PR response to the breach and detailing the multiple company failures
 
 So, the above suggests a lot of reasons to avoid LastPass, but why recommend Bitwarden?
